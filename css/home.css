@@ -4,33 +4,30 @@
   box-sizing: border-box;
 }
 
-/* body{
-  background-color: #C9E4CA;
-} */
-
 body {
   background: linear-gradient(to right, #C9E4CA 45%, #87BBA2, #55828B, #3B6064, #364958);
   background-attachment: fixed;
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
+  /* font-weight: 100;
+  font-style: normal; */
   /* https://coolors.co/c9e4ca-87bba2-55828b-3b6064-364958 */
   /* https://fonts.google.com/selection/embed */
 }
 
-#y{
+#divTitle{
   text-align: center;
+  margin-top: 25px;
 }
 
-#heyoo{
+#title{
+  font-weight: 600;
   position:relative;
   animation: linear;
-  animation-name: run;
+  animation-name: runTitle;
   animation-duration: 4s;
 }
-
-@keyframes run {
+@keyframes runTitle {
   0% {
     right: -100%;
   }
@@ -41,4 +38,46 @@ body {
     right: 0;
   } */
   /* https://stackoverflow.com/questions/41587802/css-animation-from-left-to-right */
+}
+
+#picDiv{
+  /* border: 2px solid blue; */
+  display: flex;
+  /* display: inline-block; */
+  justify-content: flex-end;
+  /* align-content: flex-end; */
+  /* align-items: flex-end; */
+}
+
+#aboutLink{
+  /* border: 2px solid red; */
+  /* display: inline-block; */
+   /* justify-content: flex-end; */
+  /* align-content: flex-end; */
+  /* align-items: flex-end; */
+    /* margin-top: 40px; */
+    margin-right: 15px;
+}
+
+.pic{
+  animation: pulse 2s linear;
+  /* animation-duration: 5s; */
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+}
+@keyframes pulse {
+  0%{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  50%{
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100%{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  /* https://codepen.io/ITpresent/pen/mdbPJLO */
 }
