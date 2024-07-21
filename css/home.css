@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* display: flex;
+  flex-direction: column; */
+  justify-content: flex-end;
+  background: linear-gradient(to right, #C9E4CA 45%, #87BBA2, #55828B, #3B6064, #364958);
+  background-attachment: fixed;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: 100;
+  font-style: normal; */
+  /* https://coolors.co/c9e4ca-87bba2-55828b-3b6064-364958 */
+  /* https://fonts.google.com/selection/embed */
+}
+
+#divTitle{
+  align-content: center;
+  text-align: center;
+  margin-top: 25px;
+}
+
+#title{
+  font-weight: 600;
+  position:relative;
+  animation: linear;
+  animation-name: runTitle;
+  animation-duration: 4s;
+}
+@keyframes runTitle {
+  0% {
+    right: -100%;
+  }
+  50% {
+    right: 0;
+  }
+  /* 100% {
+    right: 0;
+  } */
+  /* https://stackoverflow.com/questions/41587802/css-animation-from-left-to-right */
+}
+
+
+img.pic, .flip-card, .flip-card-front {
+  /* border: 2px solid red; */
+  margin-top: 10px;
+  margin-right: 20px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  animation: pulse 1s linear;
+  /* animation-duration: 5s; */
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+}
+@keyframes pulse {
+  0%{
+    -webkit-transform: scale(1.1);
+    /* transform: scale(1.1); */
+  }
+  50%{
+    -webkit-transform: scale(0.9);
+    /* transform: scale(0.8); */
+  }
+  100%{
+    -webkit-transform: scale(1);
+    /* transform: scale(1); */
+  }
+  /* https://codepen.io/ITpresent/pen/mdbPJLO */
+}
+
+#x{
+  display: flex;
+  justify-content: flex-end;
+  /* border: 2px solid red; */
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  /* border: 1px solid #f1f1f1; */
+  border-radius: 50%;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  /* border: 2px solid pink; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  /* background-color: #bbb; */
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+  /* https://www.w3schools.com/howto/howto_css_flip_card.asp */
+}
+
+#p{
+  margin-top: 25px;
+}
