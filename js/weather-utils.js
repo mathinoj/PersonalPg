@@ -13,5 +13,8 @@ function dateFromTimeStamp(timeStamp){
 	let month = appendLeadingZeroes(dateTime.getMonth() + 1);
 	let day = dateTime.getUTCDate();
 	let hours = dateTime.getHours();
+	console.log("dt: " +dateTime);
 	return `${year}-${month}-${day} ${hours}:00`;
 }
+
+console.log("dt: " +dateTime);

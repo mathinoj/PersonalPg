@@ -2,7 +2,7 @@
 
 
 let dateShow = document.querySelector(`.forecast`)
-// console.log(dateShow)
+// console.log("DS " +dateShow)
 // let grabC = document.querySelectorAll('.card')
 // // let grabContainer = document.querySelector('.container')
 // let grabC = document.querySelectorAll('.card-body')
@@ -20,8 +20,14 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?` +
 	.then(data => data.json())
 	.then(forecast => {
 		for (let i = 6; i < forecast.list.length; i += 8) {
+			console.log(forecast);
+			console.log(forecast.list[i]);
 			weatherArr.push(forecast.list[i])
 		}
+
+
+		// let todaysDate = Date(weatherArr * 1000)
+		// console.log(todaysDate);
 
 		console.log(weatherArr)
 		for(let i=0; i < weatherArr.length; i++){
@@ -31,15 +37,19 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?` +
 			let city = forecast.city.name;
 			//DATE
 			let grabDtFromList = weatherArr[i].dt;
+			// console.log("Current Day: " +Date(grabDtFromList *1000));
+
 			let date = new Date(grabDtFromList * 1000)
+			// console.log("Tzdate: " +todaysDate);
 			let month = (date.getMonth() + 1)
 			let day = (date.getUTCDate());
+			// console.log("day: " +day);
 			let year = (date.getUTCFullYear())
 			let fullDate = (`${month}-${day}-${year}`)
 			//TEMPERATURE
 			let tempLow = weatherArr[i].main.temp_min;
 			let tempMax = weatherArr[i].main.temp_max;
-			let tempLoMax = `${tempLow} F / ${tempMax} F`
+			let tempLoMax = `${tempMax} F`
 			//WEATHER ICON
 			let weatherId = weatherArr[i].weather[0].icon;
 			// DESCRIPTION
@@ -175,7 +185,7 @@ function searchIt (e) {
 						//TEMPERATURE
 						let tempLow = forecast.list[i].main.temp_min;
 						let tempMax = forecast.list[i].main.temp_max;
-						let tempLoMax = `${tempLow} F / ${tempMax} F`
+						let tempLoMax = `${tempMax} F`
 						//WEATHER ICON
 						let weatherId = forecast.list[i].weather[0].icon;
 						// DESCRIPTION
