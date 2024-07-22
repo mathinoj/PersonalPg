@@ -1,99 +1,9 @@
 'use strict'
-// const form = document.querySelector("#beltSet");
-// const userInput = document.querySelector("#setBelt");
-// const spanChange = document.querySelector("#listBelt");
-// console.log(form);
-// console.log(userInput);
-// console.log(spanChange);
-// form.addEventListener("submit", function (e) {
-//     e.preventDefault();
-//     spanChange.innerText = `${userInput.value}`;
-//     userInput.value = "";
-//     console.log(spanChange);
-// });
-
-// const form = document.querySelector("#beltSet");
-// const userInputBelt = document.querySelector("#setBelt");
-// const userInputStripe = document.querySelector("#setStripes");
-// console.log("check It: " + userInputStripe);
-// const userInputClass = document.querySelector("#setClasses");
-// const spanChangeBelt = document.querySelector("#listBelt");
-// const spanChangeStripe = document.querySelector("#listStripes");
-// console.log(spanChangeStripe);
-// const spanChangeClass = document.querySelector("#listClasses");
-// form.addEventListener("submit", function (e) {
-//     e.preventDefault();
-//     spanChangeBelt.innerText = `${userInputBelt.value}`;
-//     userInputBelt.value = "";
-//     const newOne = (spanChangeStripe.innerText = `${userInputStripe.value}`);
-//     console.log("spanChangeStripe.innerText: " + spanChangeStripe.innerText);
-//     console.log("`${userInputStripe.value}`: " + `${userInputStripe.value}`);
-//     console.log("userInputStripe.value: " + userInputStripe.value);
-//     console.log("newOne: " + newOne);
-//     const oldOne = (userInputStripe.value = "");
-//     console.log("oldOne: " + oldOne);
-//     spanChangeClass.innerText = `${userInputClass.value}`;
-//     userInputClass.value = "";
-//     console.dir(e.target);
-// });
-
-// let upButt = document.querySelector("#upOneClick");
-// upButt.addEventListener("click", function (e) {
-//     let addClass = document.getElementById("classCheck").innerText;
-
-//     addClass++;
-
-//     const classAdd = document.querySelector("#classCheck");
-//     classAdd.innerText = addClass;
-//     console.log("Up Class: " + addClass);
-// });
-
-// const setClass = document.querySelector("#upOneClick");
-// const stripeAdd = document.querySelector("#stripeCheck");
-// //^^where we want LI to go
-// const beltAdd = document.querySelector("#newBelt");
-// setClass.addEventListener("click", function (e) {
-//     e.preventDefault();
-//     const grabClickUp = document.getElementById("classCheck").innerText;
-
-//     const getSetClass = document.querySelector("#listClasses").innerText;
-//     const getSetStripe = document.querySelector("#listStripes").innerText;
-
-//     const newLi = document.createElement("li");
-//     newLi.innerText = "Stripe";
-
-//     const newBeltAdd = document.createElement("h3");
-//     newBeltAdd.innerText = "New Belt Earned";
-
-//     for (let i = 1; i <= getSetStripe; i++) {
-//         // console.log("getSetClass: " + getSetClass);
-//         console.log("getSetStripe: " + getSetStripe);
-
-//         const numToGet = i * getSetClass;
-
-//         console.log("This is numToGet: " + numToGet);
-//         console.log("This is grabClickUp: " + grabClickUp);
-
-//         const timed = getSetClass * getSetStripe;
-//         // console.log("This is TIMED: " + timed);
-//         const lastNum = grabClickUp;
-//         // console.log("List-o-nums: " + lastNum);
-
-//         if (numToGet == grabClickUp) {
-//             stripeAdd.append(newLi);
-//             alert("INPUT STUDENTS NAME earned a stripe!");
-//         } else if (timed == lastNum) {
-//             // alert("Advance to next belt!");
-//             beltAdd.append(newBeltAdd);
-//             alert("Advance to next belt!");
-//             break;
-//         }
-//     }
-// });
 
 let showForm = document.querySelector("#submitBelt");
-console.log(showForm);
-const beltForming = document.querySelector("#tryThis");
+// console.log(showForm);
+const startForm = document.querySelector("#startForm");
+console.log(startForm);
 //^^ where we want FORM to go
 const newButtsToForm = document.querySelector("#buttsHere");
 const newCounterToForm = document.querySelector("#counterHere");
@@ -102,7 +12,7 @@ const willItAddVar = document.querySelector("#willItAdd");
 // console.log(numz);
 showForm.addEventListener("click", function (e) {
     e.preventDefault();
-    console.log(beltForming);
+    console.log(startForm);
     console.log(showForm);
 
     let numz = document.getElementById("formNum").innerText;
@@ -135,7 +45,7 @@ showForm.addEventListener("click", function (e) {
     newBeltForm.setAttribute("id", `addedForm-${how}`);
     // newBeltForm.setAttribute("id", "addedForm");
     newBeltForm.innerHTML = willForm;
-    beltForming.append(newBeltForm);
+    startForm.append(newBeltForm);
 
     const getSubFormDiv = document.querySelector(`#addedForm-${how}`);
     console.log(getSubFormDiv);
