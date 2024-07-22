@@ -2,13 +2,7 @@
 
 
 let dateShow = document.querySelector(`.forecast`)
-// console.log("DS " +dateShow)
-// let grabC = document.querySelectorAll('.card')
-// // let grabContainer = document.querySelector('.container')
-// let grabC = document.querySelectorAll('.card-body')
-// let grabC = document.querySelector(`.card-${i}`)
-// console.log(grabCd)
-// let tryThis = document.querySelector("[data-forecast='4']")
+
 let tryThis = document.querySelectorAll(".forecast")
 
 let weatherArr = [];
@@ -109,6 +103,8 @@ function searchIt (e) {
 	let searcher = document.getElementById('searchBar')
 	let filter = searcher.value.toLowerCase()
 	console.log(filter)
+	let cityCapitalized = filter.charAt(0).toUpperCase() +filter.slice(1);
+
 	if (filter) {
 
 		// const coords = e.lngLat;
@@ -131,9 +127,11 @@ function searchIt (e) {
 			reverseGeocode({lng: inputLong, lat: inputLat}, MAPBOX_API_KEY).
 			then( results => console.log(results) );
 
+			console.log(results);
+
 			const alamoInfo = {
 				address: results,
-				popupHTML: "<p>Welcome to the HERE!</p>"
+				popupHTML: `<p>Welcome to ${cityCapitalized}!</p>`
 			};
 
 			function placeMarkerAndPopup(info, token, map) {
