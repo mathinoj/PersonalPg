@@ -13,15 +13,14 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?` +
 	`&units=imperial`)
 	.then(data => data.json())
 	.then(forecast => {
-		for (let i = 6; i < forecast.list.length; i += 8) {
-			console.log(forecast);
+		console.log(forecast.list);
+
+		for (let i = 0; i < forecast.list.length; i += 8) {
+			// console.log(i);
+			// console.log(forecast);
 			console.log(forecast.list[i]);
 			weatherArr.push(forecast.list[i])
 		}
-
-
-		// let todaysDate = Date(weatherArr * 1000)
-		// console.log(todaysDate);
 
 		console.log(weatherArr)
 		for(let i=0; i < weatherArr.length; i++){
