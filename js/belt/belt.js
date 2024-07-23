@@ -27,16 +27,16 @@ showForm.addEventListener("click", function (e) {
     const getBeltStripesClasses = document.getElementById("beltSet").innerHTML;
     // console.log(getBeltStripesClasses);
     const setBeltStripesClasses = document.createElement("form");
-    console.log(setBeltStripesClasses);
+
     setBeltStripesClasses.setAttribute("id", `addedForm-${setNewFormNumber}`);
-    //RIIIIIITE HER
+
     setBeltStripesClasses.innerHTML = getBeltStripesClasses;
     startForm.append(setBeltStripesClasses);
 
     const getSubFormDiv = document.querySelector(`#addedForm-${setNewFormNumber}`);
-    console.log(getSubFormDiv);
+    console.log(getSubFormDiv); //ENDED RITE HER
     const sure = document.querySelector(".divFormSub").innerHTML;
-    // console.log(sure);
+
     const newby = document.createElement("div");
     console.log(newby);
     newby.setAttribute("id", `#divForSubmitForm-${setNewFormNumber}`);
