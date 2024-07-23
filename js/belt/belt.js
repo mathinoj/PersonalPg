@@ -1,122 +1,107 @@
 'use strict'
 
 let showForm = document.querySelector("#submitBelt");
-// console.log(showForm);
 const startForm = document.querySelector("#startForm");
-console.log(startForm);
 //^^ where we want FORM to go
-const newButtsToForm = document.querySelector("#buttsHere");
-const newCounterToForm = document.querySelector("#counterHere");
-const willItAddVar = document.querySelector("#willItAdd");
-// let numz = document.getElementById("formNum").innerText;
-// console.log(numz);
+
+
 showForm.addEventListener("click", function (e) {
     e.preventDefault();
-    console.log(startForm);
-    console.log(showForm);
 
-    let numz = document.getElementById("formNum").innerText;
-    console.log("Before numz++ (form): " + numz);
-    numz++;
-    console.log("AFTER numz++ (form): " + numz);
-    const addFormer = document.querySelector("#formNum");
-    console.log(addFormer);
-    const how = (addFormer.innerText = numz);
-    console.log(how);
-    console.log("Form number is: " + numz);
-    // if (numz > 0) {
-    //     let bye = numz - numz;
-    //     console.log(bye);
-    // }
 
-    console.dir(e.target);
-    // console.dir(e.path[3].childNodes[5].childNodes[0].classList.value);
-    // const whe = newBeltForm.setAttribute("title", how);
-    // console.log(whe);
-    console.dir(e.path);
-    // console.dir(e.path[3].childNodes[5]);
-    // const popo = document.querySelector("#addedForm").title;
-    // console.log(popo);
+    let whatNumberFormItIs = document.getElementById("formNum").innerText;
+    // console.log("Before numz++ (form): " + whatNumberFormItIs);
+    whatNumberFormItIs++;
+    // console.log("AFTER numz++ (form): " + whatNumberFormItIs);
+    const getNewFormNumber = document.querySelector("#formNum");
+    // console.log(getNewFormNumber);
+    const setNewFormNumber = (getNewFormNumber.innerText = whatNumberFormItIs);
+    // console.log(setNewFormNumber);
+    // console.log("Form number is: " + whatNumberFormItIs);
 
-    const willForm = document.getElementById("beltSet").innerHTML;
-    // console.log(willForm);
-    const newBeltForm = document.createElement("form");
-    console.log(newBeltForm);
-    newBeltForm.setAttribute("id", `addedForm-${how}`);
-    // newBeltForm.setAttribute("id", "addedForm");
-    newBeltForm.innerHTML = willForm;
-    startForm.append(newBeltForm);
+    // console.dir(e.target);
+    // console.log(e);
+    // console.dir(e);
+    // console.dir(e.path);
 
-    const getSubFormDiv = document.querySelector(`#addedForm-${how}`);
+    const getBeltStripesClasses = document.getElementById("beltSet").innerHTML;
+    // console.log(getBeltStripesClasses);
+    const setBeltStripesClasses = document.createElement("form");
+    console.log(setBeltStripesClasses);
+    setBeltStripesClasses.setAttribute("id", `addedForm-${setNewFormNumber}`);
+    //RIIIIIITE HER
+    setBeltStripesClasses.innerHTML = getBeltStripesClasses;
+    startForm.append(setBeltStripesClasses);
+
+    const getSubFormDiv = document.querySelector(`#addedForm-${setNewFormNumber}`);
     console.log(getSubFormDiv);
     const sure = document.querySelector(".divFormSub").innerHTML;
     // console.log(sure);
     const newby = document.createElement("div");
     console.log(newby);
-    newby.setAttribute("id", `#divForSubmitForm-${how}`);
+    newby.setAttribute("id", `#divForSubmitForm-${setNewFormNumber}`);
     newby.innerHTML = sure;
     getSubFormDiv.append(newby);
 
-    const boo = document.getElementById(`#divForSubmitForm-${how}`);
+    const boo = document.getElementById(`#divForSubmitForm-${setNewFormNumber}`);
     console.log(boo);
     const surely = document.querySelector(".buttSetBelt").innerHTML;
     // console.log(surely);
     const booby = document.createElement("button");
     console.log(booby);
-    booby.setAttribute("id", `#submitForm-${how}`);
+    booby.setAttribute("id", `#submitForm-${setNewFormNumber}`);
     booby.innerHTML = surely;
     boo.append(booby);
 
-    // const who = document.getElementById(`#submitForm-${how}`);
-    // console.log(who);
+
     const burley = document.querySelector(".subzeroNum").innerHTML;
     console.log(burley);
     const gooby = document.createElement("span");
     console.log(gooby);
-    gooby.setAttribute("id", `#subNum-${how}`);
+    gooby.setAttribute("id", `#subNum-${setNewFormNumber}`);
     gooby.innerHTML = burley;
     boo.append(gooby);
 
     console.dir(e);
-    // const formAdded = beltForming.append(newBeltForm);
+
     console.dir(e);
 
-    console.log(`addedForm-${how}`);
 
-    const yoloz = document.querySelector(`#addedForm-${how}`);
+
+    const yoloz = document.querySelector(`#addedForm-${setNewFormNumber}`);
     const getDisplay = document.getElementById("getBelt").innerHTML;
     // console.log(getDisplay);
     const newDisplay = document.createElement("h3");
     console.log(newDisplay);
-    newDisplay.setAttribute("id", `newDisplay-${how}`);
+    newDisplay.setAttribute("id", `newDisplay-${setNewFormNumber}`);
     newDisplay.innerHTML = getDisplay;
     yoloz.append(newDisplay);
 
-    const recluse = `newDisplay-${how}`.replace("newDisplay-", "");
+    const recluse = `newDisplay-${setNewFormNumber}`.replace("newDisplay-", "");
     console.log(recluse);
     const gettingClass = document.querySelector("#listClasses");
     console.log(gettingClass);
     gettingClass.setAttribute("id", `#listClasses-${recluse}`);
 
-    // const deluz = `newDisplay-${how}`
+
     const gettingStripe = document.querySelector("#listStripes");
     console.log(gettingStripe);
     gettingStripe.setAttribute("id", `#listStripes-${recluse}`);
 
-    // const yolo = document.querySelector(`#addedForm-${how}`);
+
     const getCounters = document.getElementById("displayBelt").innerHTML;
     // console.log(getCounters);
     const newCountHeading = document.createElement("h4");
     console.log(newCountHeading);
     // newCountHeading.setAttribute("id", "counters");
 
-    newCountHeading.setAttribute("id", `counters-${how}`);
+    newCountHeading.setAttribute("id", `counters-${setNewFormNumber}`);
     newCountHeading.innerHTML = getCounters;
     yoloz.append(newCountHeading);
 
     // const setClass = document.querySelector("#upOneClick");
     // setClass.setAttribute("id", `#upOneClick-${reduce}`);
-    const deduce = `counters-${how}`.replace("counters-", "");
+    const deduce = `counters-${setNewFormNumber}`.replace("counters-", "");
     console.log(deduce);
     const classAdd = document.querySelector("#classCheck");
     console.log(classAdd);
@@ -135,34 +120,36 @@ showForm.addEventListener("click", function (e) {
     const newButtDiv = document.createElement("div");
     console.log(newButtDiv);
     // newButtDiv.setAttribute("id", "countClass");
-    newButtDiv.setAttribute("id", `countClass-${how}`);
+    newButtDiv.setAttribute("id", `countClass-${setNewFormNumber}`);
     newButtDiv.innerHTML = getButts;
     // buttsHere.append(newButtDiv);
     // newButtsToForm.append(newButtDiv);
     // const buttonsAdded = newButtsToForm.append(newButtDiv);
     const buttonsAdded = yoloz.append(newButtDiv);
     // console.log(buttonsAdded);
-    console.log(`countClass-${how}`);
+    console.log(`countClass-${setNewFormNumber}`);
     // console.log(countClass.length);
-    console.dir(`countClass-${how}`);
+    console.dir(`countClass-${setNewFormNumber}`);
     // ^^^^ GETS BUTTONS AND ADDS TO FORM ^^^^^^^^^^^^^^^^^^^^^^^^^
 
     console.dir(e.path);
 
     // const grabNew = document.querySelector("#addedForm");
-    console.log(`countClass-${how}`);
-    // console.log(`countClass-${how}`.replace("countClass-", ""));
-    const reduce = `countClass-${how}`.replace("countClass-", "");
+    console.log(`countClass-${setNewFormNumber}`);
+
+    const reduce = `countClass-${setNewFormNumber}`.replace("countClass-", "");
     console.log(reduce);
 
     const setClass = document.querySelector("#upOneClick");
-    // const setClass = document.querySelector(`#upOneClick-${how}`);
+    console.log(setClass);
+
+
     setClass.setAttribute("id", `#upOneClick-${reduce}`);
 
     const minusClass = document.querySelector("#downOneClick");
     minusClass.setAttribute("id", `#downOneClick-${reduce}`);
 
-    let grabNew = document.querySelector(`#addedForm-${how}`);
+    let grabNew = document.querySelector(`#addedForm-${setNewFormNumber}`);
 
     console.log(grabNew);
     console.dir(e.target);
@@ -186,7 +173,7 @@ showForm.addEventListener("click", function (e) {
     const grabClassCounter = document.querySelector("#classCheck");
     console.log(grabClassCounter);
     console.dir(e);
-    const deez = document.querySelector(`#newDisplay-${how}`);
+    const deez = document.querySelector(`#newDisplay-${setNewFormNumber}`);
     // console.log(deez);
     // console.dir(deez);
     // console.dir(deez.childNodes[1]);
@@ -202,7 +189,7 @@ showForm.addEventListener("click", function (e) {
 
     grabNew.addEventListener("submit", function (e) {
         e.preventDefault();
-        // alert(`submit clicked for form# ${how}`);
+
 
         console.log(userInputBelt);
         console.dir(e);
@@ -212,7 +199,7 @@ showForm.addEventListener("click", function (e) {
         console.log(ruby);
         ruby++;
         console.log(ruby);
-        let subAdd = document.getElementById(`#subNum-${how}`);
+        let subAdd = document.getElementById(`#subNum-${setNewFormNumber}`);
         console.log(subAdd);
         let party = (subAdd.innerText = ruby);
         console.log(party);
@@ -220,11 +207,12 @@ showForm.addEventListener("click", function (e) {
 
         console.log(grabNew);
         // console.dir(grabNew);
-
+        console.dir(e);
+        console.dir(e.target[2].value);
         let bluey = (deezerD.innerHTML =
-            "Belt Color: " + `${e.path[0][0].value}`);
+            "Belt Color: " + `${e.target[0].value}`);
         console.log(bluey);
-        e.path[0][0].value = "";
+        e.target[0].value = "";
 
         // console.log(spanChangeBelt);
 
@@ -236,8 +224,8 @@ showForm.addEventListener("click", function (e) {
         // console.dir(e.path[0][1].value);
 
         let striper =
-            (stripeToNeWForm.innerText = `# of Stripes: ${e.path[0][1].value}`);
-        e.path[0][1].value = "";
+            (stripeToNeWForm.innerText = `# of Stripes: ${e.target[1].value}`);
+        e.target[1].value = "";
         console.log(striper);
 
         // console.log(stripeToNeWForm);
@@ -246,47 +234,30 @@ showForm.addEventListener("click", function (e) {
         // console.dir(deez);
 
         let classer =
-            (classToNewForm.innerText = `# of Classes: ${e.path[0][2].value}`);
-        e.path[0][2].value = "";
+            (classToNewForm.innerText = `# of Classes: ${e.target[2].value}`);
+        e.target[2].value = "";
         console.log(classer);
 
         console.log(grabNew);
         // if (party > 1) {
         if (grabNew) {
-            // document.getElementById(`#submitForm-${how}`).style.visibility =
-            //     "hidden";
-            document.getElementById(`#submitForm-${how}`).style.display =
+            document.getElementById(`#submitForm-${setNewFormNumber}`).style.display =
                 "none";
             // alert("more than 1");
         }
-
+//WUTANG
         console.dir(e);
 
-        alert(`submit clicked for form# ${how}`);
+        alert(`submit clicked for form# ${setNewFormNumber}`);
 
-        // });
-        // if (grabNew) {
-        // if (base > 0) {
-        //     alert(`Again for form# ${how}`);
-        // }
 
         //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
-        // const setClass = document.querySelector("#upOneClick");
-        // console.log(setClass);
 
-        // const setClass = document.querySelector("#upOneClick");
-        // const setClass = document.querySelector(`#upOneClick-${reduce}`);
-        // setClass.setAttribute("id", `#upOneClick-${how}`);
-
-        // const stripeAdd = document.querySelector("#stripeCheck");
-        // const stripeAdd = document.querySelector("#stripeCheck");
-
-        // console.log(stripeAdd);
         //^^where we want LI to go
         const beltAdd = document.querySelector("#newBelt");
 
         // let addClass = document.getElementById("classCheck").innerHTML;
-        // let addClassez = document.getElementById(`counters-${how}`);
+
         let addClassez = document.getElementById(`counters-${deduce}`);
 
         console.log(addClassez);
@@ -297,26 +268,17 @@ showForm.addEventListener("click", function (e) {
 
         console.dir(grabNew);
 
-        console.log(`counters-${how}`);
-        console.dir(`counters-${how}`);
+        console.log(`counters-${setNewFormNumber}`);
+        console.dir(`counters-${setNewFormNumber}`);
 
-        console.log(numz);
+        console.log(whatNumberFormItIs);
         console.dir(e);
-        console.dir(numz);
+        console.dir(whatNumberFormItIs);
 
         setClass.addEventListener("click", function (e) {
             e.preventDefault();
             console.dir(e);
-            // console.log(stripeAdd);
-            // console.log(`counters-${how}`);
-            // console.log(setClass);
-            // console.dir(setClass);
 
-            // console.log(numz);
-            // console.dir(e);
-            // console.dir(numz);
-
-            // console.log(grabNew);
 
             console.dir(e);
 
@@ -386,7 +348,7 @@ showForm.addEventListener("click", function (e) {
             let newLi = document.createElement("li");
             console.log(newLi);
             console.dir(e);
-            newLi.setAttribute("id", `newStripeSee-${how}`);
+            newLi.setAttribute("id", `newStripeSee-${setNewFormNumber}`);
             newLi.innerText = "Stripe";
 
             // let newBeltAdd = document.createElement("h3");
@@ -396,13 +358,13 @@ showForm.addEventListener("click", function (e) {
 
             let newBeltAdd = document.createElement("h3");
             console.log(newBeltAdd);
-            newBeltAdd.setAttribute("id", `advanceBelt-${how}`);
+            newBeltAdd.setAttribute("id", `advanceBelt-${setNewFormNumber}`);
             newBeltAdd.innerText = "New Belt Earned";
             console.dir(e);
 
             // alert(`up button clicked`);
 
-            console.log(`countClass-${how}`);
+            console.log(`countClass-${setNewFormNumber}`);
 
             for (let i = 1; i <= getSetStripe; i++) {
                 // for (let i = 1; i <= removedStripeText; i++) {
@@ -422,16 +384,7 @@ showForm.addEventListener("click", function (e) {
 
                 const lastNum = classAdd.innerText;
                 console.log(lastNum);
-                // console.dir(e.path);
-                // console.dir(e.path[2].childNodes[26].childNodes[11]);
-                // console.log(`counters-${how}`);
-                // console.dir(`counters-${how}`);
-                // console.dir(`newStripeSee-${how}`);
-                // console.log(`newStripeSee-${how}`);
-                // const playa = `counters-${how}`.replace("counters-", "");
-                // console.log(playa);
-                // const laya = `newStripeSee-${how}`.replace("newStripeSee-", "");
-                // console.log(laya);
+
                 console.log(addClassez);
 
                 if (numToGet == classAdd.innerText) {
@@ -472,7 +425,7 @@ showForm.addEventListener("click", function (e) {
         const getSetStripe = striper.replace("# of Stripes: ", "");
         console.log(getSetStripe);
 
-        let removeItTwo = document.getElementById(`advanceBelt-${how}`);
+        let removeItTwo = document.getElementById(`advanceBelt-${setNewFormNumber}`);
         console.log(removeItTwo);
 
         minusClass.addEventListener("click", function (e) {
@@ -481,10 +434,10 @@ showForm.addEventListener("click", function (e) {
             console.log("CLASS input: " + getSetClass);
             // console.log("NUMtoGET: " + numToGet);
 
-            let removeIt = document.getElementById(`newStripeSee-${how}`);
+            let removeIt = document.getElementById(`newStripeSee-${setNewFormNumber}`);
             console.log(removeIt);
 
-            let removeItTwo = document.getElementById(`advanceBelt-${how}`);
+            let removeItTwo = document.getElementById(`advanceBelt-${setNewFormNumber}`);
             console.log(removeItTwo);
 
             let subtractClass = document.getElementById(
