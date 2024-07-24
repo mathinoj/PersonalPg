@@ -22,14 +22,19 @@ body {
   /* border: 2px solid pink; */
   margin-top: 20px;
   display: flex;
+  height: 425px;
 }
+}
+.container2{
+  border: 2px solid red;
 }
 
 @media only screen and (min-width: 992px) {
 #insideErr{
-  /* border: 2px solid blue; */
+  border: 2px solid blue;
   display: flex;
   flex-direction: row-reverse;
+  flex-wrap: wrap;
   flex-grow: 1;
   justify-content: space-evenly;
   }
@@ -62,9 +67,9 @@ body {
 @media only screen and (min-width: 992px) {
   #picBorder{
     /* display: inline-block; */
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     margin-bottom: 10px;
-    /* height: 71%; */
+    height: 71%;
   }
   }
 
@@ -97,6 +102,7 @@ nav {
   height: 400px;
   overflow-y: scroll;
   scroll-behavior: smooth;
+  /* border: 2px solid orange; */
 }
 .scroll-page {
   /* display: flex; */
