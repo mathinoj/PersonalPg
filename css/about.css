@@ -23,6 +23,7 @@ body {
   margin: 0 auto;
 }
 
+
 /* body {
   background: rgb(204,204,204);
   width: 21cm;
@@ -31,6 +32,11 @@ body {
 } */
 
 /* Fonts */
+
+.goBack{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 /* Family */
 h1 {
@@ -84,8 +90,8 @@ h1 {
 /* Sizes */
 h1 {
   font-weight: 300;
-  /* font-size: 1.2cm; */
-  font-size: .9cm;
+  font-size: 1.2cm;
+  /* font-size: .9cm; */
   transform:scale(1,1.15);
   margin-bottom: 0.2cm;
   margin-top: 0.2cm;
