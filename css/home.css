@@ -31,8 +31,6 @@ body {
 @media only screen and (min-width: 992px) {
 .container2{
   /* border: 2px solid red; */
-  /* display: flex; */
-  /* flex-direction: column; */
 }
 }
 
@@ -40,12 +38,6 @@ body {
 .whole{
   /* border: solid 2px orange; */
   display: flex;
-  /* flex-direction: row-reverse; */
-  /* flex-wrap: wrap; */
-  /* flex-grow: 1; */
-  /* justify-content: space-evenly; */
-  /* text-align:; */
-  /* flex-basis: 100%; */
 }
 }
 
@@ -65,34 +57,17 @@ body {
   }
 }
 
-/* @media only screen and (min-width: 992px) {
-  #c{
-    text-align: left;
-  }
-} */
 
 @media only screen and (min-width: 992px) {
 #y{
-  border: solid 2px black;
-  margin-right: 25px;
-  /* margin-left: 200px; */
-  /* display: flex; */
-  /* flex-direction: row-reverse; */
-  /* flex-wrap: wrap; */
-  /* flex-grow: 1; */
-  /* justify-content: space-evenly; */
-  /* flex-basis: 100%; */
-  width: 75%;
+  border: solid 2px red;
+  /* margin-right: 25px; */
+  /* width: 75%; */
+  /* background: linear-gradient(to right, black, rgb(25, 24, 24),black, grey, #FCFFFC, white);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text; */
 }
 }
-
-/* @media only screen and (min-width: 992px) {
-  #z{
-    border: solid 2px black;
-    margin-left: 20px;
-    width: 70%;
-  }
-  } */
 
 @media only screen and (min-width: 992px) {
 #insideErr{
@@ -264,13 +239,14 @@ nav {
 
 
 
-
-
-
+@media only screen and (max-width: 768px) {
 #divTitle{
+  /* border: 2px solid red; */
   align-content: center;
   text-align: center;
   margin-top: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 #title{
@@ -292,6 +268,10 @@ nav {
   } */
   /* https://stackoverflow.com/questions/41587802/css-animation-from-left-to-right */
 }
+
+}
+
+
 
 
 @media only screen and (max-width: 768px) {
@@ -356,6 +336,28 @@ img.pic, .flip-card, .flip-card-front {
   background-color: dodgerblue;
   color: white;
   transform: rotateY(180deg);
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* https://www.w3schools.com/howto/howto_css_flip_card.asp */
 }
+
+#backText{
+  /* border: 2px solid black; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+
+}
+
+@media only screen and (max-width: 768px) {
+  .container2{
+    /* border: 2px solid red; */
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }
