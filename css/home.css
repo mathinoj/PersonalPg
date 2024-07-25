@@ -14,6 +14,7 @@ body {
   font-style: normal; */
   /* https://coolors.co/c9e4ca-87bba2-55828b-3b6064-364958 */
   /* https://fonts.google.com/selection/embed */
+  border: 6px solid black;
 }
 
 
@@ -26,7 +27,7 @@ body {
     font-optical-sizing: auto;
 
 
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     /* align-content: center;
@@ -35,6 +36,8 @@ body {
     /* flex-basis: 15%; */
     /* margin-left: 5px; */
   }
+
+
 
   #insideErr{
     /* border: 2px solid blue; */
@@ -52,6 +55,7 @@ body {
     /* display: block; */
     margin: 0 auto;
     text-align: center;
+
   }
   nav {
     width: 339px;
@@ -63,6 +67,12 @@ body {
     height: 400px;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 2px;
+    box-shadow: 0px 0px 7px 2px #87BBA2;
+    margin-bottom: 2px;
   }
   .scroll-page {
     /* display: flex; */
@@ -86,7 +96,7 @@ body {
     /* flex-direction: column-reverse; */
   }
 
-#picBorder{
+.picBorder{
   /* display: inline-block; */
   /* border: 2px solid purple; */
   margin-bottom: 10px;
@@ -218,50 +228,58 @@ img.pic, .flip-card, .flip-card-front {
 
 @media  (min-width: 992px) {
   #container{
-    border: 2px solid purple;
+    /* border: 2px solid hotpink; */
     margin-top: 20px;
-    display: flex;
-    height: 425px;
-  }
-
-  .container2{
-    /* border: 2px solid red; */
-  }
-
-  .whole{
-    /* border: solid 2px orange; */
-    display: flex;
+    /* display: flex; */
+    height: 500px;
+    /* justify-content: space-around; */
+    /* width: 100%; */
+    /* height: 100%; */
   }
 
   #y{
-    border: solid 2px red;
+    border: solid 2px green;
   }
 
   #insideErr{
     /* border: 2px solid blue; */
     display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    justify-content: space-evenly;
+    /* flex-direction: column; */
+    flex-direction: row;
+    width: inherit;
+    height: inherit;
+    /* justify-content: space-between; */
     }
 
-  .scroll-container{
-    /* border: 2px solid red; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border-radius: 2px;
-    /* box-shadow: 10px 10px 5px 12px #87BBA2; */
-    /* box-shadow: 10px 0 10px 0 #87BBA2; */
-    /* box-shadow: 0px -4px 3px #87BBA2; */
-    box-shadow: 0px 0px 7px 2px #87BBA2;
 
+#three{
+  /* border: 4px solid orangered; */
+  width: 50%;
+  height: inherit;
+  display: inline;
+  align-content: center;
+  margin-right: 2px;
 
-  }
+}
+
+#one{
+  /* border: 2px solid red; */
+  width: 50%;
+  height: inherit;
+
+}
+
+.picBorder{
+  /* display: flex; */
+  /* border: 2px solid orange; */
+  /* margin-bottom: 10px; */
+  width: 100%;
+  height: inherit;
+
+}
 
 #picDiv{
-  /* border: 2px solid red; */
+  /* border: 2px solid purple; */
   border-radius: 0;
   width: inherit;
   height: inherit;
@@ -269,8 +287,12 @@ img.pic, .flip-card, .flip-card-front {
   /* align-items: center; */
 }
 
+.flip-card-inner{
+  /* border: 2px solid red; */
+}
+
   img.pic{
-    border: 2px solid black;
+    border: 2px solid hsl(162, 52%, 89%);
     width: 100%;
     height: auto;
   }
@@ -283,13 +305,7 @@ img.pic, .flip-card, .flip-card-front {
 
   }
 
-  #picBorder{
-      display: flex;
-      /* border: 2px solid blue; */
-      margin-bottom: 10px;
-      height:425px;
-      width: 425px;
-    }
+
 
     .flip-card-front, .flip-card-back {
       /* border: 2px solid purple; */
@@ -306,29 +322,27 @@ img.pic, .flip-card, .flip-card-front {
     }
 
 
-      .flip-card:hover .flip-card-inner {
+    .flip-card:hover .flip-card-inner {
         transform: none;
-      }
+    }
 
     nav, .scroll-container {
     /* border: 2px solid orange; */
-    /* display: block; */
+    display: block;
     margin: 0 auto;
     text-align: center;
     /* box-shadow: 10px 10px 5px 12px #55828B; */
+    width: auto;
+    height: 90%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
   }
   nav {
     width: 339px;
     padding: 5px;
     border: 1px solid black;
   }
-  .scroll-container {
-    width: 500px;
-    height: 400px;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    /* border: 2px solid orange; */
-  }
+
   .scroll-page {
     /* display: flex; */
     margin-top: 10px;
