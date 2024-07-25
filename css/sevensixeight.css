@@ -1,32 +1,6 @@
-/* https://flexboxsheet.com/ */
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  /* background: linear-gradient(to right, #C9E4CA 45%, #87BBA2, #55828B, #3B6064, #364958);
-  background-attachment: fixed;
-  font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto; */
-  /* font-weight: 100;
-  font-style: normal; */
-  /* https://coolors.co/c9e4ca-87bba2-55828b-3b6064-364958 */
-  /* https://fonts.google.com/selection/embed */
-}
-
-
-
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   #container {
-    background: linear-gradient(to right, #C9E4CA 45%, #87BBA2, #55828B, #3B6064, #364958);
-    background-attachment: fixed;
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-
-
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     /* align-content: center;
@@ -107,7 +81,6 @@ body {
   animation: linear;
   animation-name: runTitle;
   animation-duration: 4s;
-  /* color: red; */
 }
 @keyframes runTitle {
   0% {
@@ -122,6 +95,7 @@ body {
   /* https://stackoverflow.com/questions/41587802/css-animation-from-left-to-right */
 }
 
+
 img.pic, .flip-card, .flip-card-front {
   /* border: 2px solid red; */
   /* margin-top: 10px; */
@@ -129,7 +103,7 @@ img.pic, .flip-card, .flip-card-front {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  /* animation: pulse 1s linear; */
+  animation: pulse 1s linear;
   /* animation-duration: 5s; */
   animation-iteration-count: 2;
   animation-timing-function: linear;
@@ -207,150 +181,133 @@ img.pic, .flip-card, .flip-card-front {
 
 
 
-
-
-
-
-
-
-
-
-
-@media  (min-width: 992px) {
-  #container{
-    border: 2px solid purple;
-    margin-top: 20px;
-    display: flex;
-    height: 425px;
-  }
-
-  .container2{
-    /* border: 2px solid red; */
-  }
-
-  .whole{
-    /* border: solid 2px orange; */
-    display: flex;
-  }
-
-  #y{
-    border: solid 2px red;
-  }
-
-  #insideErr{
-    /* border: 2px solid blue; */
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    justify-content: space-evenly;
-    }
-
-  .scroll-container{
-    /* border: 2px solid red; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border-radius: 2px;
-    /* box-shadow: 10px 10px 5px 12px #87BBA2; */
-    /* box-shadow: 10px 0 10px 0 #87BBA2; */
-    /* box-shadow: 0px -4px 3px #87BBA2; */
-    box-shadow: 0px 0px 7px 2px #87BBA2;
-
-
-  }
-
-#picDiv{
-  /* border: 2px solid red; */
-  border-radius: 0;
-  width: inherit;
-  height: inherit;
-  /* display: flex; */
-  /* align-items: center; */
-}
-
-  img.pic{
-    border: 2px solid black;
-    width: 100%;
-    height: auto;
-  }
-
-  .flip-card {
-    background-color: transparent;
-    width: 100%;
-    height: auto;
-    border-radius: 0;
-
-  }
-
-  #picBorder{
+/* @media only screen and (min-width: 768px) { */
+  @media  (min-width: 992px) {
+    #container{
+      border: 2px solid pink;
+      margin-top: 20px;
       display: flex;
+      height: 425px;
+    }
+    /* }
+
+    @media  (min-width: 992px) { */
+    .container2{
+      /* border: 2px solid red; */
+    }
+    /* }
+
+    @media  (min-width: 992px) { */
+    .whole{
+      /* border: solid 2px orange; */
+      display: flex;
+    }
+    /* }
+
+    @media  (min-width: 992px) { */
+      #alpha{
+        text-align: left;
+        /* display: flex; */
+        /* flex-basis: 100%; */
+      }
+    /* }
+
+    @media  (min-width: 992px) { */
+      #b{
+        text-align: left;
+        /* display: flex; */
+        /* flex-basis: 100%; */
+      }
+    /* }
+
+
+    @media (min-width: 992px) { */
+    #y{
+      border: solid 2px red;
+      /* margin-right: 25px; */
+      /* width: 75%; */
+      /* background: linear-gradient(to right, black, rgb(25, 24, 24),black, grey, #FCFFFC, white);
+        -webkit-text-fill-color:transparent;
+        -webkit-background-clip: text; */
+    }
+    /* }
+
+    @media  (min-width: 992px) { */
+    #insideErr{
       /* border: 2px solid blue; */
-      margin-bottom: 10px;
-      height:425px;
-      width: 425px;
-    }
-
-    .flip-card-front, .flip-card-back {
-      /* border: 2px solid purple; */
-      border-radius: 0;
-      width: inherit;
-      height: inherit;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      justify-content: space-evenly;
+      }
+    /* }
+
+    @media (min-width: 992px) { */
+    .scroll-container{
+      /* border: 2px solid red; */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      border-radius: 2px;
+      /* box-shadow: 10px 10px 5px 12px #87BBA2; */
+      /* box-shadow: 10px 0 10px 0 #87BBA2; */
+      /* box-shadow: 0px -4px 3px #87BBA2; */
+      box-shadow: 0px 0px 7px 2px #87BBA2;
+
+
     }
+    /* }
 
-    .flip-card-back{
-      display: none;
-    }
+    @media  (min-width: 992px) { */
+      img.pic{
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+      }
+    /* }
 
-
-      .flip-card:hover .flip-card-inner {
-        transform: none;
+    @media  (min-width: 992px) { */
+      #picBorder{
+        /* display: inline-block; */
+        /* border: 2px solid blue; */
+        margin-bottom: 10px;
+        height: 71%;
       }
 
-    nav, .scroll-container {
-    /* border: 2px solid orange; */
-    /* display: block; */
-    margin: 0 auto;
-    text-align: center;
-    /* box-shadow: 10px 10px 5px 12px #55828B; */
-  }
-  nav {
-    width: 339px;
-    padding: 5px;
-    border: 1px solid black;
-  }
-  .scroll-container {
-    width: 500px;
-    height: 400px;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    /* border: 2px solid orange; */
-  }
-  .scroll-page {
-    /* display: flex; */
-    margin-top: 10px;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    font-size: 5em;
-  }
-  }
+      .flip-card-back{
+          /* display: inline-block; */
+          /* border: 2px solid blue;
+          margin-bottom: 10px; */
+          visibility: hidden;
+          animation: none;
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      nav, .scroll-container {
+      /* border: 2px solid orange; */
+      /* display: block; */
+      margin: 0 auto;
+      text-align: center;
+      /* box-shadow: 10px 10px 5px 12px #55828B; */
+    }
+    nav {
+      width: 339px;
+      padding: 5px;
+      border: 1px solid black;
+    }
+    .scroll-container {
+      width: 500px;
+      height: 400px;
+      overflow-y: scroll;
+      scroll-behavior: smooth;
+      /* border: 2px solid orange; */
+    }
+    .scroll-page {
+      /* display: flex; */
+      margin-top: 10px;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      font-size: 5em;
+    }
+    }
