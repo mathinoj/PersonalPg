@@ -6,46 +6,33 @@
 }
 
 body {
+height: 100%;
 
-
-  /* background: linear-gradient(to right, #C9E4CA 45%, #87BBA2, #55828B, #3B6064, #364958);
-  background-attachment: fixed;
-  font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto; */
-  /* font-weight: 100;
-  font-style: normal; */
   /* https://coolors.co/c9e4ca-87bba2-55828b-3b6064-364958 */
   /* https://fonts.google.com/selection/embed */
-  /* border: 6px solid black; */
+  /* border: 6px solid orange; */
+  background: #8AB0AB;
+  /* background-color: #8AB0AB; */
+  border-radius: 50%;
 
 }
+
 
 .navbar{
-  background: linear-gradient(to right, #C9E4CA 45%, #87BBA2, #55828B, #3B6064, #364958);
   height: inherit;
   width: inherit;
+  border-color:#55828B;
+  background: #506c7e;
 }
-
-
 
 @media (min-width: 576px) {
 
 
   #container {
-    background: linear-gradient(to right, #C9E4CA 45%, #87BBA2, #55828B, #3B6064, #364958);
+    /* background: linear-gradient(to right, #C9E4CA 45%, #87BBA2, #55828B, #3B6064, #364958); */
     background-attachment: fixed;
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
-
-
-    /* border: 2px solid black; */
-    display: flex;
-    flex-direction: column;
-    /* align-content: center;
-    align-items: center;
-    justify-content: center; */
-    /* flex-basis: 15%; */
-    /* margin-left: 5px; */
   }
 
 
@@ -54,10 +41,6 @@ body {
     /* border: 2px solid blue; */
     display: flex;
     flex-direction: column;
-    /* align-content: center; */
-    /* flex-direction: row-reverse; */
-    /* flex-grow: 1; */
-    /* justify-content: space-evenly; */
     align-items: center;
     }
 
@@ -242,34 +225,41 @@ img.pic, .flip-card, .flip-card-front {
 }
 
 
+
+
+
+
+
+
+
+
+
 @media  (min-width: 992px) {
+
+
   #container{
     /* border: 2px solid hotpink; */
     margin-top: 20px;
+background: #3E505B;
     /* display: flex; */
-    height: 500px;
+    /* height: 500px; */
     /* justify-content: space-around; */
     /* width: 100%; */
     /* height: 100%; */
+    /* flex-direction: row; */
+    height: 82vh;
+    /* overflow: auto; */
+    /* background: #778DA9; */
+    border-radius: 0% 100% 0% 100% / 70% 30% 70% 30% ;
   }
 
-
-  /* .scrollMe{
-    display: block;
-    display: flex;
-    justify-content: center;
-  } */
-
-
-  #y{
-    border: solid 2px green;
-  }
 
   #insideErr{
     /* border: 2px solid blue; */
-    display: flex;
+    /* display: flex; */
     /* flex-direction: column; */
     flex-direction: row;
+    /* align-content: flex-start; */
     width: inherit;
     height: inherit;
     /* justify-content: space-between; */
@@ -290,21 +280,22 @@ img.pic, .flip-card, .flip-card-front {
   /* border: 2px solid red; */
   width: 50%;
   height: inherit;
-
 }
 
 .picBorder{
   /* display: flex; */
   /* border: 2px solid orange; */
   /* margin-bottom: 10px; */
+  /* background: #274060; */
+  /* border-radius: 10% 25%; */
   width: 100%;
   height: inherit;
-
 }
 
 #picDiv{
-  /* border: 2px solid purple; */
-  border-radius: 0;
+  /* border: 2px solid #0D1B2A; */
+  /* background: linear-gradient(to right, #364958 45%, #55828B, #1B263B, #0D1B2A); */
+  /* border-radius: 70%; */
   width: inherit;
   height: inherit;
   /* display: flex; */
@@ -316,7 +307,9 @@ img.pic, .flip-card, .flip-card-front {
 }
 
   img.pic{
-    border: 2px solid hsl(162, 52%, 89%);
+    /* border: 2px solid hsl(162, 52%, 89%); */
+    border-radius: 61% 39% 61% 39% / 46% 55% 45% 54% ;
+
     width: 100%;
     height: auto;
   }
@@ -337,7 +330,7 @@ img.pic, .flip-card, .flip-card-front {
       width: inherit;
       height: inherit;
       display: flex;
-      align-items: center;
+      /* align-items: center; */
       justify-content: center;
     }
 
@@ -352,6 +345,8 @@ img.pic, .flip-card, .flip-card-front {
 
     nav, .scroll-container {
     /* border: 2px solid orange; */
+    /* background: #666A86; */
+    /* border-radius: 50% 20% / 10% 40%; */
     display: block;
     margin: 0 auto;
     text-align: center;

@@ -21,7 +21,7 @@
     </head>
     <body>
         <!-- <div class="navigateBar"> -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button
@@ -45,10 +45,69 @@
                         <a class="nav-link disabled" aria-disabled="true"
                             >Disabled</a
                         >
+                        <a
+                            class="nav-link"
+                            data-bs-toggle="offcanvas"
+                            href="#offcanvasExample"
+                            role="button"
+                            aria-controls="offcanvasExample"
+                        >
+                            Bout Me
+                        </a>
                     </div>
                 </div>
             </div>
         </nav>
+
+        <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+        >
+            <div class="offcanvas-header">
+                <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                    Offcanvas
+                </h5> -->
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                ></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <p>
+                        My journey began in 2021 with Codeup's rigorous software
+                        development bootcamp where I honed my skills in Java,
+                        Spring Boot, Hibernate, and front-end technologies.
+                        While my passion lies in the intricacies of back-end
+                        engineering, I recognize the value of a full-stack
+                        perspective and actively seek opportunities to enhance
+                        my front-end capabilities.
+                    </p>
+                    <p>
+                        Although I graduated from Codeup’s software development
+                        program in 2022, a subsequent military deployment
+                        presented unforeseen challenges. Nevertheless, I
+                        persevered through independent learning and additional
+                        coursework to deepen my technical expertise. Upon my
+                        return from deployment I re-enrolled into the same
+                        program at Codeup to re-learn and solidify my skills as
+                        a software developer. However, after Codeup’s unexpected
+                        permanent shutdown, I was presented with the challenge
+                        to continue and actively develop my abilities through
+                        independent projects, as demonstrated on this page.
+                    </p>
+                    <p>
+                        This personal webpage is a work in progress and I will
+                        continue to add more projects and make it look better.
+                        Please have a look through.
+                    </p>
+                </div>
+            </div>
+        </div>
         <!-- </div> -->
 
         <div id="divTitle">
@@ -64,144 +123,109 @@
             <a href="#page-2">2</a>
             <a href="#page-3">3</a>
         </nav> -->
-
-        <div id="container" class="all">
-            <!-- <div id="everythingElse" class="xx"> -->
-            <!-- <h3 class="clickMe">Click Me</h3> -->
-            <div id="insideErr">
-                <div id="one">
-                    <div class="picBorder">
-                        <div id="picDiv" class="flip-card text-center">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <a id="aboutLink" href="./about.html">
-                                        <img
-                                            src="img/linkd.jpg"
-                                            class="pic"
-                                            alt="picOfMe"
-                                    /></a>
+        <!-- <div id="box"> -->
+            <div id="container" class="all">
+                <!-- <div id="everythingElse" class="xx"> -->
+                <!-- <h3 class="clickMe">Click Me</h3> -->
+                <div id="insideErr">
+                    <div id="one">
+                        <div class="picBorder">
+                            <div id="picDiv" class="flip-card text-center">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <a id="aboutLink" href="./about.html">
+                                            <img
+                                                src="img/linkd.jpg"
+                                                class="pic"
+                                                alt="picOfMe"
+                                        /></a>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <div id="backText">
+                                            <h2>Matthias Hinojosa</h2>
+                                            <p id="sWare">Software Developer</p>
+                                            <a
+                                                id="aboutLinkResume"
+                                                href="./about.html"
+                                                >Resume</a
+                                            >
+                                            <p>Scroll Through Projects Below</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="flip-card-back">
-                                    <div id="backText">
-                                        <h2>Matthias Hinojosa</h2>
-                                        <p id="sWare">Software Developer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div id="two">
+                    <div id="yourName">
+                        <p id="hiMy">My Name is MPH</p>
+                    </div>
+                </div> -->
+
+                    <div id="three">
+                        <h3 class="hiddenScroll">scroll down</h3>
+
+                        <div class="scroll-container">
+                            <div class="scroll-page" id="page-1">
+                                <div class="card" style="width: 18rem">
+                                    <img
+                                        src="img/weather.jpg"
+                                        class="card-img-top"
+                                        alt="weather"
+                                    />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Weather App</h5>
                                         <a
-                                            id="aboutLinkResume"
-                                            href="./about.html"
-                                            >Resume</a
+                                            href="./weather_map.html"
+                                            class="btn btn-primary"
+                                            >Click Here</a
                                         >
-                                        <p>Scroll Through Projects Below</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scroll-page" id="page-2">
+                                <div class="card" style="width: 18rem">
+                                    <img
+                                        src="img/DOM_Pic.jpeg"
+                                        class="card-img-top"
+                                        alt="DOM_JS"
+                                    />
+                                    <div class="card-body">
+                                        <h5 class="card-title">DOM Form</h5>
+                                        <a
+                                            href="./belt.html"
+                                            class="btn btn-primary"
+                                            >Click Here</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="scroll-page" id="page-3">
+                                <div class="card" style="width: 18rem">
+                                    <img
+                                        src="..."
+                                        class="card-img-top"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <a
+                                            href="./weather_map.html"
+                                            class="btn btn-primary"
+                                            >Weather</a
+                                        >
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- <div id="two">
-                    <div id="yourName">
-                        <p id="hiMy">My Name is MPH</p>
-                    </div>
-                </div> -->
-
-                <div id="three">
-                    <h3 class="hiddenScroll">scroll down</h3>
-
-                    <div class="scroll-container">
-                        <div class="scroll-page" id="page-1">
-                            <div class="card" style="width: 18rem">
-                                <img
-                                    src="img/weather.jpg"
-                                    class="card-img-top"
-                                    alt="weather"
-                                />
-                                <div class="card-body">
-                                    <h5 class="card-title">Weather App</h5>
-                                    <a
-                                        href="./weather_map.html"
-                                        class="btn btn-primary"
-                                        >Click Here</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                        <div class="scroll-page" id="page-2">
-                            <div class="card" style="width: 18rem">
-                                <img
-                                    src="img/DOM_Pic.jpeg"
-                                    class="card-img-top"
-                                    alt="DOM_JS"
-                                />
-                                <div class="card-body">
-                                    <h5 class="card-title">DOM Form</h5>
-                                    <a
-                                        href="./belt.html"
-                                        class="btn btn-primary"
-                                        >Click Here</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="scroll-page" id="page-3">
-                            <div class="card" style="width: 18rem">
-                                <img src="..." class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <a
-                                        href="./weather_map.html"
-                                        class="btn btn-primary"
-                                        >Weather</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="four"></div>
             </div>
-        </div>
-        <div class="container2">
-            <div class="whole">
-                <!-- <div id="z">
-                    <p class="para" id="c">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Magni perferendis architecto eum adipisci omnis
-                        nobis error? Libero, qui dolore ab impedit, aliquid
-                        placeat in id ipsam quis, suscipit natus eligendi.
-                    </p>
-                </div> -->
-                <div id="y" class="biz">
-                    <!-- <p class="para">
-                        Hello, my name is Matthias and I am a Software Developer
-                        on a journey to continue building a strong foundation in
-                        full stack development.
-                    </p> -->
-                    <p class="para" id="you">
-                        My journey began in 2021 with Codeup's rigorous software
-                        development bootcamp where I honed my skills in Java,
-                        Spring Boot, Hibernate, and front-end technologies.
-                        While my passion lies in the intricacies of back-end
-                        engineering, I recognize the value of a full-stack
-                        perspective and actively seek opportunities to enhance
-                        my front-end capabilities.
-                    </p>
-                    <p class="para">
-                        Although I graduated from Codeup’s software development
-                        program in 2022, a subsequent military deployment
-                        presented unforeseen challenges. Nevertheless, I
-                        persevered through independent learning and additional
-                        coursework to deepen my technical expertise. Upon my
-                        return from deployment I re-enrolled into the same
-                        program at Codeup to re-learn and solidify my skills as
-                        a software developer. However, after Codeup’s unexpected
-                        permanent shutdown, I was presented with the challenge
-                        to continue and actively develop my abilities through
-                        independent projects, as demonstrated on this page.
-                    </p>
-                </div>
-            </div>
-        </div>
+        <!-- </div> -->
+
+
 
         <script src="js/home.js"></script>
         <script
