@@ -6,6 +6,8 @@
 }
 
 body {
+
+
   /* background: linear-gradient(to right, #C9E4CA 45%, #87BBA2, #55828B, #3B6064, #364958);
   background-attachment: fixed;
   font-family: "Quicksand", sans-serif;
@@ -15,17 +17,18 @@ body {
   /* https://coolors.co/c9e4ca-87bba2-55828b-3b6064-364958 */
   /* https://fonts.google.com/selection/embed */
   /* border: 6px solid black; */
+
+}
+
+.navbar{
+  background: linear-gradient(to right, #C9E4CA 45%, #87BBA2, #55828B, #3B6064, #364958);
+  height: inherit;
+  width: inherit;
 }
 
 
 
 @media (min-width: 576px) {
-  .navbar{
-    /* border: 2px solid red; */
-    background: linear-gradient(to right, #C9E4CA 45%, #87BBA2, #55828B, #3B6064, #364958);
-    height: inherit;
-    width: inherit;
-  }
 
 
   #container {
@@ -227,14 +230,19 @@ img.pic, .flip-card, .flip-card-front {
 
 
 
+.hiddenScroll{
+  display: none;
+}
 
 
-
+.all:hover .hiddenScroll{
+  display: block;
+  display: flex;
+  justify-content: center;
+}
 
 
 @media  (min-width: 992px) {
-
-
   #container{
     /* border: 2px solid hotpink; */
     margin-top: 20px;
@@ -244,6 +252,14 @@ img.pic, .flip-card, .flip-card-front {
     /* width: 100%; */
     /* height: 100%; */
   }
+
+
+  /* .scrollMe{
+    display: block;
+    display: flex;
+    justify-content: center;
+  } */
+
 
   #y{
     border: solid 2px green;

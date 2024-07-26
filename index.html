@@ -28,56 +28,24 @@
                     class="navbar-toggler"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown"
+                    data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a
-                                class="nav-link active"
-                                aria-current="page"
-                                href="#"
-                                >Home</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                            >
-                                Dropdown link
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="#">Action</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#"
-                                        >Another action</a
-                                    >
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#"
-                                        >Something else here</a
-                                    >
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#"
+                            >Home</a
+                        >
+                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link disabled" aria-disabled="true"
+                            >Disabled</a
+                        >
+                    </div>
                 </div>
             </div>
         </nav>
@@ -99,6 +67,7 @@
 
         <div id="container" class="all">
             <!-- <div id="everythingElse" class="xx"> -->
+            <!-- <h3 class="clickMe">Click Me</h3> -->
             <div id="insideErr">
                 <div id="one">
                     <div class="picBorder">
@@ -136,6 +105,8 @@
                 </div> -->
 
                 <div id="three">
+                    <h3 class="hiddenScroll">scroll down</h3>
+
                     <div class="scroll-container">
                         <div class="scroll-page" id="page-1">
                             <div class="card" style="width: 18rem">
@@ -200,13 +171,13 @@
                         placeat in id ipsam quis, suscipit natus eligendi.
                     </p>
                 </div> -->
-                <div id="y">
+                <div id="y" class="biz">
                     <!-- <p class="para">
                         Hello, my name is Matthias and I am a Software Developer
                         on a journey to continue building a strong foundation in
                         full stack development.
                     </p> -->
-                    <p class="para">
+                    <p class="para" id="you">
                         My journey began in 2021 with Codeup's rigorous software
                         development bootcamp where I honed my skills in Java,
                         Spring Boot, Hibernate, and front-end technologies.
