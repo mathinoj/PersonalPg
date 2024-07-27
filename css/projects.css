@@ -15,14 +15,14 @@ h1{
 }
 
 .scroll-container{
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 100%;
   height: auto;
 }
 
 
 .scroll-page{
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 20px;
@@ -42,16 +42,16 @@ h1{
   }
 
   .scroll-container{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     /* width: 100%;
     height: auto; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
 
   .scroll-page{
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     /* display: block */
     /* flex-direction: row; */
     /* justify-content: space-evenly; */
