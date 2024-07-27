@@ -7,7 +7,12 @@
 
 body {
 height: 100%;
-
+/* background: linear-gradient(to right, #364958 15%, #415A77, #55828B, #1B263B, #0D1B2A); */
+  /* background: linear-gradient(to right, #C9E4CA 15%, #87BBA2, #55828B, #3B6064, #364958); */
+  /* background: linear-gradient(to right, #83cdb6 15%, #87BBA2, #55828B, #3B6064, #364958); */
+  /* background-attachment: fixed; */
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
   /* https://coolors.co/c9e4ca-87bba2-55828b-3b6064-364958 */
   /* https://fonts.google.com/selection/embed */
   /* border: 6px solid orange; */
@@ -19,10 +24,13 @@ height: 100%;
 
 
 .navbar{
+  /* background-color: red; */
+  /* background: black; */
+  /* background: linear-gradient(to right, #C9E4CA 45%, #87BBA2, #55828B, #3B6064, #364958); */
   height: inherit;
   width: inherit;
   border-color:#55828B;
-  background: #506c7e;
+  background: #6b7e89;
 }
 
 @media (min-width: 576px) {
@@ -31,8 +39,19 @@ height: 100%;
   #container {
     /* background: linear-gradient(to right, #C9E4CA 45%, #87BBA2, #55828B, #3B6064, #364958); */
     background-attachment: fixed;
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
+    /* font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto; */
+
+
+    /* border: 2px solid black; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-content: center;
+    align-items: center;
+    justify-content: center; */
+    /* flex-basis: 15%; */
+    /* margin-left: 5px; */
+    /* height: 100%; */
   }
 
 
@@ -41,6 +60,10 @@ height: 100%;
     /* border: 2px solid blue; */
     display: flex;
     flex-direction: column;
+    /* align-content: center; */
+    /* flex-direction: row-reverse; */
+    /* flex-grow: 1; */
+    /* justify-content: space-evenly; */
     align-items: center;
     }
 
