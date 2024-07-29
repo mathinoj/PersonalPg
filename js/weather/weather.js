@@ -2,13 +2,7 @@
 
 
 let dateShow = document.querySelector(`.forecast`)
-// console.log(dateShow)
-// let grabC = document.querySelectorAll('.card')
-// // let grabContainer = document.querySelector('.container')
-// let grabC = document.querySelectorAll('.card-body')
-// let grabC = document.querySelector(`.card-${i}`)
-// console.log(grabCd)
-// let tryThis = document.querySelector("[data-forecast='4']")
+
 let tryThis = document.querySelectorAll(".forecast")
 
 let weatherArr = [];
@@ -19,7 +13,12 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?` +
 	`&units=imperial`)
 	.then(data => data.json())
 	.then(forecast => {
-		for (let i = 6; i < forecast.list.length; i += 8) {
+		console.log(forecast.list);
+
+		for (let i = 0; i < forecast.list.length; i += 8) {
+			// console.log(i);
+			// console.log(forecast);
+			console.log(forecast.list[i]);
 			weatherArr.push(forecast.list[i])
 		}
 
@@ -31,15 +30,19 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?` +
 			let city = forecast.city.name;
 			//DATE
 			let grabDtFromList = weatherArr[i].dt;
+			// console.log("Current Day: " +Date(grabDtFromList *1000));
+
 			let date = new Date(grabDtFromList * 1000)
+			// console.log("Tzdate: " +todaysDate);
 			let month = (date.getMonth() + 1)
 			let day = (date.getUTCDate());
+			// console.log("day: " +day);
 			let year = (date.getUTCFullYear())
 			let fullDate = (`${month}-${day}-${year}`)
 			//TEMPERATURE
 			let tempLow = weatherArr[i].main.temp_min;
 			let tempMax = weatherArr[i].main.temp_max;
-			let tempLoMax = `${tempLow} F / ${tempMax} F`
+			let tempLoMax = `${tempMax} F`
 			//WEATHER ICON
 			let weatherId = weatherArr[i].weather[0].icon;
 			// DESCRIPTION
@@ -99,6 +102,8 @@ function searchIt (e) {
 	let searcher = document.getElementById('searchBar')
 	let filter = searcher.value.toLowerCase()
 	console.log(filter)
+	let cityCapitalized = filter.charAt(0).toUpperCase() +filter.slice(1);
+
 	if (filter) {
 
 		// const coords = e.lngLat;
@@ -121,9 +126,11 @@ function searchIt (e) {
 			reverseGeocode({lng: inputLong, lat: inputLat}, MAPBOX_API_KEY).
 			then( results => console.log(results) );
 
+			console.log(results);
+
 			const alamoInfo = {
 				address: results,
-				popupHTML: "<p>Welcome to the HERE!</p>"
+				popupHTML: `<p>Welcome to ${cityCapitalized}!</p>`
 			};
 
 			function placeMarkerAndPopup(info, token, map) {
@@ -175,7 +182,7 @@ function searchIt (e) {
 						//TEMPERATURE
 						let tempLow = forecast.list[i].main.temp_min;
 						let tempMax = forecast.list[i].main.temp_max;
-						let tempLoMax = `${tempLow} F / ${tempMax} F`
+						let tempLoMax = `${tempMax} F`
 						//WEATHER ICON
 						let weatherId = forecast.list[i].weather[0].icon;
 						// DESCRIPTION
