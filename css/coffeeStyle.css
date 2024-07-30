@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e5d2bb;
+  font-family: 'Tilt Neon', sans-serif;
+}
+
+.card {
+  /* background-image: url("img/coffee-beans.jpeg"); */
+  background: #BD897E;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.coffeeList {
+  text-align: center;
+}
+
+.coffeeTitle{
+  text-align: center;
+}
+
+.addCoff{
+  text-align: center;
+}
+
+.button {
+  background-color: #634e3b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: .5em;
+}
+.button:hover{
+  background-color: #886a50;
+}
+
+.searchCoff{
+  text-align: center;
+}
+
+#coffees{
+  column-count: 2;
+}
+
+.coffeeBox{
+  overflow: auto;
+}

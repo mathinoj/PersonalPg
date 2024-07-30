@@ -227,6 +227,55 @@ img.pic, .flip-card, .flip-card-front {
     margin-right: 10px;
     margin-left: 10px;
   }
+
+
+  .taskVid{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+  }
+
+  #crdBdy{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  #vidPara{
+    /* border: 2px solid blue; */
+    font-size: 15px;
+  }
+
+
+  #topHeader{
+    background: #EDFFEC;
+  }
+
+#crdBdyWeather{
+  display: flex;
+    flex-direction: column;
+}
+
+#paraWeather{
+  font-size: 15px;
+}
+
+
+  #boutMe{
+    /* border: 2px solid blue; */
+    background: #EDFFEC;
+  }
+
+  #cardBdyBelt{
+    display: flex;
+    flex-direction: column;
+  }
+
+#paraBelt{
+  font-size: 15px;
+}
 }
 
 
@@ -407,6 +456,20 @@ background: #3E505B;
     height: auto;
     border-radius: 2%;
   }
+
+#crdBdy{
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+}
+
+
+#vidPara{
+  /* border: 2px solid blue; */
+  font-size: 15px;
+}
+
+
   }
 
 
