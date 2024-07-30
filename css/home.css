@@ -253,10 +253,29 @@ img.pic, .flip-card, .flip-card-front {
     background: #EDFFEC;
   }
 
+#crdBdyWeather{
+  display: flex;
+    flex-direction: column;
+}
+
+#paraWeather{
+  font-size: 15px;
+}
+
+
   #boutMe{
     /* border: 2px solid blue; */
     background: #EDFFEC;
   }
+
+  #cardBdyBelt{
+    display: flex;
+    flex-direction: column;
+  }
+
+#paraBelt{
+  font-size: 15px;
+}
 }
 
 
