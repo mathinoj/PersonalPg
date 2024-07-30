@@ -1,0 +1,2 @@
+const MAPBOX_API_KEY = "pk.eyJ1IjoibWFkbWFyY29zIiwiYSI6ImNsNWw0YWNobTBnY3AzanN4dzdpemhpeG0ifQ.OO7BegDPBkP3SV0CaLbnyQ";
+const WEATHERMAP_API_KEY = "b6d96f04d2c9a8872a3768be1e36db70";
