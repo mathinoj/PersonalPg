@@ -48,6 +48,17 @@
                                 >Home</a
                             >
                         </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                data-bs-toggle="offcanvas"
+                                href="#offcanvasExample"
+                                role="button"
+                                aria-controls="offcanvasExample"
+                            >
+                                About The App
+                            </a>
+                        </li>
                     </ul>
                     <form class="d-flex" role="search" id="searchForm">
                         <input
@@ -69,6 +80,46 @@
                 </div>
             </div>
         </nav>
+
+        <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+        >
+            <div id="topHeader" class="offcanvas-header">
+                <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                    Offcanvas
+                </h5> -->
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                ></button>
+            </div>
+            <div id="boutMe" class="offcanvas-body">
+                <div>
+                    <p>Utilized the following:</p>
+                    <ul>
+                        <li>Javascript</li>
+                        <li>JSON</li>
+                        <li>Asynchronous JavaScript and XML (AJAX)</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Fetch API</li>
+                        <li>OpenWeatherMap API</li>
+                        <li>Mapbox API</li>
+                    </ul>
+                    <p>
+                        I still need to work out some kinks with this
+                        application. For example when a user drops a pin onto a
+                        new city the five day forecast starts one day ahead.
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <!--<div class="container">-->
         <div class="card-group">
             <div class="card">
