@@ -23,7 +23,7 @@
         <!-- <div class="navigateBar"> -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">myPage</a>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -37,11 +37,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#"
+                        <a
+                            class="nav-link active"
+                            aria-current="page"
+                            href="./index.html"
                             >Home</a
                         >
                         <a class="nav-link" href="./projects.html">Projects</a>
-                        <a class="nav-link" href="#">Pricing</a>
                         <a
                             class="nav-link"
                             data-bs-toggle="offcanvas"
@@ -49,8 +51,9 @@
                             role="button"
                             aria-controls="offcanvasExample"
                         >
-                            Bout Me
+                            About Me
                         </a>
+                        <a class="nav-link" href="./about.html">Resume</a>
                     </div>
                 </div>
             </div>
@@ -62,7 +65,7 @@
             id="offcanvasExample"
             aria-labelledby="offcanvasExampleLabel"
         >
-            <div class="offcanvas-header">
+            <div id="topHeader" class="offcanvas-header">
                 <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">
                     Offcanvas
                 </h5> -->
@@ -73,10 +76,10 @@
                     aria-label="Close"
                 ></button>
             </div>
-            <div class="offcanvas-body">
+            <div id="boutMe" class="offcanvas-body">
                 <div>
                     <p>
-                        My journey began in 2021 with Codeup's rigorous software
+                        My journey began in 2021 with a rigorous software
                         development bootcamp where I honed my skills in Java,
                         Spring Boot, Hibernate, and front-end technologies.
                         While my passion lies in the intricacies of back-end
@@ -86,7 +89,7 @@
                     </p>
                     <p>
                         Although I graduated from Codeup’s software development
-                        program in 2022, a subsequent military deployment
+                        bootcamp in 2022, a subsequent military deployment
                         presented unforeseen challenges. Nevertheless, I
                         persevered through independent learning and additional
                         coursework to deepen my technical expertise. Upon my
@@ -102,6 +105,7 @@
                         continue to add more projects and make it look better.
                         Please have a look through.
                     </p>
+                    <p>Thank you.</p>
                 </div>
             </div>
         </div>
@@ -154,18 +158,9 @@
                     </div>
                 </div>
 
-                <!-- <div id="two">
-                    <div id="yourName">
-                        <p id="hiMy">My Name is MPH</p>
-                    </div>
-                </div> -->
-
                 <div id="three">
-                    <h3 class="hiddenScroll">scroll down</h3>
+                    <h3 class="hiddenScroll">scroll down &#8595;</h3>
                     <div class="scroll-container">
-
-
-
                         <div class="scroll-page" id="page-1">
                             <div class="card" id="p1Card" style="width: 18rem">
                                 <video
@@ -173,12 +168,19 @@
                                     class="taskVid object-fit-contain"
                                     controls
                                 ></video>
-                                <div class="card-body">
-                                    <h5 class="card-title">Task CRUD App</h5>
+                                <div class="card-body" id="crdBdy">
+                                    <h5 id="titleTask" class="card-title">
+                                        Task CRUD App
+                                    </h5>
+                                    <p id="vidPara">
+                                        Click the link below to see a longer
+                                        walk through video on YouTube
+                                    </p>
                                     <a
                                         href="https://youtu.be/btAjo5C67zk"
                                         class="btn btn-primary"
-                                        >Other</a
+                                        id="taskLink"
+                                        >Task</a
                                     >
                                 </div>
                             </div>
