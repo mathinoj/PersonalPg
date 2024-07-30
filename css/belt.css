@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#mainContainer{
+  border: 2px solid blueviolet;
+  display: flex;
+}
+
+#containerOne{
+  border: 2px solid blue;
+  width: 50%;
+  height: auto;
+}
+
+#containerTwo{
+  border: 2px solid red;
+  width: 50%;
+  height: auto;
+}
