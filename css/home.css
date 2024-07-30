@@ -395,6 +395,18 @@ background: #3E505B;
     height: 100%;
     font-size: 5em;
   }
+
+
+/* #page-1{
+  border: 2px solid blue;
+} */
+
+  .taskVid{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+  }
   }
 
 
