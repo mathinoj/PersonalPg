@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+body {
+  /* border: 6px solid orange; */
+  height: 100%;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  /* https://coolors.co/c9e4ca-87bba2-55828b-3b6064-364958 */
+  /* https://fonts.google.com/selection/embed */
+}
+
+
 h1{
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
