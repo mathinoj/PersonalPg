@@ -1,5 +1,5 @@
 // const MOVIE_HOST = "http://localhost:3000";
-const MOVIE_HOST = "https://mathinoj.github.io/matthiasH.github.io/"
+const MOVIE_HOST = "https://mathinoj.github.io/matthiasH.github.io"
 export function getMovies() {
 	try {
 		return fetch(`${MOVIE_HOST}/movies`)
