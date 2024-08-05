@@ -1,4 +1,5 @@
 const MOVIE_HOST = "http://localhost:3000";
+console.log(MOVIE_HOST);
 // const MOVIE_HOST = "https://mathinoj.github.io/matthiasH.github.io/"
 export function getMovies() {
 	try {
