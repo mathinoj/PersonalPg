@@ -1,4 +1,5 @@
 const MOVIE_HOST = "http://localhost:3000";
+// const MOVIE_HOST = "https://mathinoj.github.io/matthiasH.github.io/"
 export function getMovies() {
 	try {
 		return fetch(`${MOVIE_HOST}/movies`)
@@ -11,7 +12,17 @@ export function getMovies() {
 	}
 }
 
-export const creatMovie = async function (movie) {
+const url = `${MOVIE_HOST}/movies`;
+console.log('url: ' +url);
+const options = {
+  method: "POST",
+  headers: {
+    "Content-type": "application/json"
+  },
+  body: JSON.stringify()
+};
+
+export const createMovie = async (movie)=> {
 	try {
 		const url = `${MOVIE_HOST}/movies`;
 		const options = {

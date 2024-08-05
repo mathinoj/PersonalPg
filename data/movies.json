@@ -5,11 +5,11 @@
       "rating": 5,
       "genre": "Science-fiction action",
       "movieSummary": "A blade runner must pursue and terminate four replicants who stole a ship in space and have returned to Earth to find their creator.",
-      "id": 1,
+      "id": "1",
       "posterURL": "https://m.media-amazon.com/images/M/MV5BNzQzMzJhZTEtOWM4NS00MTdhLTg0YjgtMjM4MDRkZjUwZDBlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Misery",
       "director": "Rob Reiner",
       "released": 1990,
@@ -19,7 +19,7 @@
       "posterURL": "https://m.media-amazon.com/images/M/MV5BNzY0ODQ3MTMxN15BMl5BanBnXkFtZTgwMDkwNTg4NjE@._V1_SX300.jpg"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Dawn of the Dead",
       "director": "George Romero",
       "released": 1978,
@@ -33,10 +33,10 @@
       "rating": 4,
       "genre": "Comedy",
       "movieSummary": "Irwin M. \"Fletch\" Fletcher is a newspaper reporter being offered a large sum to off a cancerous millionaire, but is on the run, risking his job and finding clues when it's clear the man is healthy.",
-      "id": 5
+      "id": "5"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "The Dark Knight",
       "director": "Christopher Nolan",
       "released": 2008,
@@ -50,7 +50,7 @@
       "rating": 5,
       "genre": "Horror",
       "movieSummary": "Super awesome!",
-      "id": 8,
+      "id": "8",
       "posterURL": "https://m.media-amazon.com/images/M/MV5BZTdmN2RkODEtODM4ZS00ZGRlLTliMTYtYmZmZWZkMTZmODYxL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
     },
     {
@@ -58,7 +58,7 @@
       "rating": 3,
       "genre": "fantasy",
       "movieSummary": "way too long but Aragorn's pretty cool!",
-      "id": 9,
+      "id": "9",
       "posterURL": "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg"
     },
     {
@@ -66,7 +66,7 @@
       "rating": 5,
       "movieSummary": "Jack Nicholson hitting his peak.",
       "posterURL": "https://m.media-amazon.com/images/M/MV5BZWFlYmY2MGEtZjVkYS00YzU4LTg0YjQtYzY1ZGE3NTA5NGQxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-      "id": 10
+      "id": "10"
     },
     {
       "title": "The Two Towers",
@@ -74,21 +74,7 @@
       "genre": "fantasy",
       "movieSummary": "eh, ok. soundtrack is good.",
       "posterURL": "https://m.media-amazon.com/images/M/MV5BZGMxZTdjZmYtMmE2Ni00ZTdkLWI5NTgtNjlmMjBiNzU2MmI5XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "id": 11
-    },
-    {
-      "title": "add test",
-      "genre": "comedy",
-      "rating": "5",
-      "movieSummary": "this is my summary",
-      "id": 12
-    },
-    {
-      "title": "add test",
-      "genre": "comedy",
-      "rating": "8",
-      "movieSummary": "A movie with a damn good plot",
-      "id": 13
+      "id": "11"
     }
   ]
 }

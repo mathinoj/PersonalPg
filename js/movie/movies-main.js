@@ -1,6 +1,12 @@
 "use strict";
 
-import {getMovies, creatMovie, updateMovie, deleteMovie} from "./movies-api.js";
+
+import {getMovies, createMovie, updateMovie, deleteMovie} from "/js/movie/movies-api.js";
+
+console.log("cre8 movuy: " +createMovie);
+
+
+// console.log(movie);
 
 let allMovies = [];
 
@@ -87,6 +93,7 @@ async function main() {
 	//ADD MOVIE
 
 	let addMovieButtons = document.querySelector('#addMovie-btn')
+  console.log('you clicked add');
 	let showAddForm = document.querySelector('#add-form')
 	console.log(showAddForm)
 	addMovieButtons.addEventListener('click', function(event){
@@ -97,21 +104,28 @@ async function main() {
 	let exitAdd = document.querySelector('.exit-add-btn')
 	exitAdd.addEventListener('click', async function(){
 		if(exitAdd){
+      console.log('you prest cancel');
 			showAddForm.classList.toggle('hidden')
 		} else {
 			let addMovieBtn = document.querySelector('.add-btn')
+      console.log("add mobie clicked");
 			addMovieBtn.addEventListener('click', async function(){
 				let title = document.querySelector('#add-title').value
+        console.log("this title: " +title);
 				let genre = document.querySelector('#add-genre').value
+        console.log("this genre: " +genre);
 				let rating = document.querySelector('#add-rating').value
+        console.log("this rating: " +rating);
 				let movieSummary = document.querySelector('#add-summary').value
+        console.log("this summry: " +movieSummary);
 
-				await creatMovie({
+				await createMovie({
 					title: title,
 					genre: genre,
 					rating: rating,
 					movieSummary: movieSummary,
 				})
+        console.log('creatMovie: ' +createMovie);
 			})
 
 		}
