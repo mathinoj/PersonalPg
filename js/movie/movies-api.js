@@ -1,11 +1,15 @@
-const MOVIE_HOST = "http://localhost:3000";
-console.log(MOVIE_HOST);
+// const MOVIE_HOST = "http://localhost:3000";
+const MOVIE_HOST = "http://127.0.0.1:5500";
+// console.log("mh: " +MOVIE_HOST);
 // const MOVIE_HOST = "https://mathinoj.github.io/matthiasH.github.io/"
 export function getMovies() {
 	try {
 		return fetch(`${MOVIE_HOST}/movies`)
+		// return fetch("http://localhost:3000/movies")
+
 			.then(response => response.json())
 			.then( movies => {
+				console.log(movies);
 				return movies;
 			});
 	} catch(error) {
@@ -13,19 +17,12 @@ export function getMovies() {
 	}
 }
 
-const url = `${MOVIE_HOST}/movies`;
-console.log('url: ' +url);
-const options = {
-  method: "POST",
-  headers: {
-    "Content-type": "application/json"
-  },
-  body: JSON.stringify()
-};
+
 
 export const createMovie = async (movie)=> {
 	try {
 		const url = `${MOVIE_HOST}/movies`;
+		// const url = 'http://localhost:3000/movies';
 		const options = {
 			method: "POST",
 			headers: {
@@ -40,6 +37,8 @@ export const createMovie = async (movie)=> {
 		console.error(error);
 	}
 }
+
+
 
 export async function updateMovie (id, movie){
 	try {
