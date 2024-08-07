@@ -3,8 +3,6 @@
 
 import {getMovies, createMovie, updateMovie, deleteMovie} from "/js/movie/movies-api.js";
 
-console.log("cre8 movuy: " +createMovie);
-
 
 // console.log(movie);
 
@@ -29,7 +27,7 @@ async function main() {
 		grabMain.appendChild(createDiv)
 
 		let newCard = document.querySelector(`.card-${[i]}`)
-		console.log(newCard)
+		// console.log(newCard)
 
 		let showTitle = document.createElement('h3')
 		showTitle.setAttribute('id', `showTitle-${[i]}`)
@@ -43,17 +41,17 @@ async function main() {
 
 
 
-		let divImg = document.createElement('div')
-		divImg.classList.add('poster-div', `poster-div-${[i]}`)
-		newCard.appendChild(divImg)
+		// let divImg = document.createElement('div')
+		// divImg.classList.add('poster-div', `poster-div-${[i]}`)
+		// newCard.appendChild(divImg)
 
 		let grabImgDiv = document.querySelector(`.poster-div-${[i]}`)
-		let showPoster = document.createElement('img')
+		// let showPoster = document.createElement('img')
 
-		showPoster.setAttribute('class', `poster-${i}`)
-		showPoster.setAttribute('src', `${poster}`)
-		showPoster.setAttribute('alt', `${title}-poster`)
-		grabImgDiv.appendChild(showPoster)
+		// showPoster.setAttribute('class', `poster-${i}`)
+		// showPoster.setAttribute('src', `${poster}`)
+		// showPoster.setAttribute('alt', `${title}-poster`)
+		// grabImgDiv.appendChild(showPoster)
 
 
 
@@ -93,7 +91,6 @@ async function main() {
 	//ADD MOVIE
 
 	let addMovieButtons = document.querySelector('#addMovie-btn')
-  console.log('you clicked add');
 	let showAddForm = document.querySelector('#add-form')
 	console.log(showAddForm)
 	addMovieButtons.addEventListener('click', function(event){
@@ -101,23 +98,27 @@ async function main() {
 		showAddForm.classList.toggle("hidden");
 	})
 
+  let title = document.getElementById('add-title').value
+  console.log("title: " +title);
+
 	let exitAdd = document.querySelector('.exit-add-btn')
 	exitAdd.addEventListener('click', async function(){
 		if(exitAdd){
       console.log('you prest cancel');
 			showAddForm.classList.toggle('hidden')
-		} else {
+		}
+  })
+
+    // else {
 			let addMovieBtn = document.querySelector('.add-btn')
       console.log("add mobie clicked");
 			addMovieBtn.addEventListener('click', async function(){
+        if(addMovieBtn){
 				let title = document.querySelector('#add-title').value
-        console.log("this title: " +title);
+        console.log("title: " +title);
 				let genre = document.querySelector('#add-genre').value
-        console.log("this genre: " +genre);
 				let rating = document.querySelector('#add-rating').value
-        console.log("this rating: " +rating);
 				let movieSummary = document.querySelector('#add-summary').value
-        console.log("this summry: " +movieSummary);
 
 				await createMovie({
 					title: title,
@@ -126,10 +127,12 @@ async function main() {
 					movieSummary: movieSummary,
 				})
         console.log('creatMovie: ' +createMovie);
-			})
+  }})
 
-		}
-	})
+		// }
+
+
+
 
 
 	///////////////EDIT MOVIE
@@ -222,6 +225,7 @@ async function main() {
 		})
 	}
 }
+
 
 
 main();
