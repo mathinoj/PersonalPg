@@ -1,8 +1,5 @@
 .DS_Store
 secret.txt
-<<<<<<< HEAD
-
-=======
-idea
+.idea
 keys.js
->>>>>>> personalPage
+node_modules
