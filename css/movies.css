@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;1,300&display=swap');
+
+:root {
+	--card-border-color: rgba(26, 26, 26, 0.24);
+	--btn-border-color: rgba(109, 114, 113, 0.76);
+	--delete-btn-bg-color: #ec4e4e;
+	--edit-btn-bg-color: #519051;
+	--card-bg-color: rgba(255, 255, 255, 0.27);
+	--header-bg-color: rgba(237, 234, 234, 0.98);
+	--form-bg-color: #1a1a1a;
+	--form-text-color: #fbf9f9;
+	--background-gradient-top: #f3593f;
+	--background-gradient-bottom: rgb(222, 222, 9);
+}
+
+* {
+	box-sizing: border-box;
+	padding: unset;
+	margin: unset;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+}
+
+/*CLASSES*/
+
+.page-wrapper {
+	min-height: 100dvh;
+	background-image: linear-gradient(var(--background-gradient-top), var(--background-gradient-bottom));
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.row {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.column {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+
+#loader {
+	border: 12px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 12px solid #444444;
+	width: 70px;
+	height: 70px;
+	animation: spin 1s linear infinite;
+}
+
+.center {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 20px;
+	/*height: 400px;*/
+	height: 28rem;
+	/*width: 440px;*/
+	width: 20rem;
+	padding: 20px;
+	margin: 10px;
+	border: 2px solid var(--card-border-color);
+	border-radius: .5rem;
+	background-color: var(--card-bg-color);
+}
+
+.btn-div{
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	left: 22.5%;
+	bottom: 10px;
+	gap: 30px;
+}
+
+/*****EDIT BUTTON*****/
+.btn-div button:nth-child(1) {
+	border-color: var(--edit-btn-bg-color);
+}
+
+.btn-div button:nth-child(1):hover {
+	background-color: var(--edit-btn-bg-color);
+}
+
+/*****DELETE BUTTON*****/
+.btn-div button:nth-child(2) {
+	border-color: var(--delete-btn-bg-color);
+}
+
+.btn-div button:nth-child(2):hover {
+	background-color: var(--delete-btn-bg-color);
+}
+
+.card button {
+	width: 5rem;
+}
+
+.poster-div {
+	display: flex;
+	justify-content: center;
+}
+
+
+/*IDs*/
+
+#add-form, #edit-form {
+	position: absolute;
+	top: 25%;
+	left: auto;
+}
+
+#add-form {
+	z-index: 1;
+  border: 2px solid red;
+
+}
+
+
+#edit-form {
+  z-index: 9;
+  position: fixed;
+  bottom: 0;
+  /* top: 0; */
+  border: 2px solid red;
+  /* https://www.w3schools.com/howto/howto_js_popup_form.asp */
+}
+
+
+/*TAGS*/
+
+header {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem;
+	background-color: white;
+	border-bottom: 2px solid var(--btn-border-color);
+}
+
+header button {
+	width: 5rem;
+	font-size: .75em;
+}
+
+h1, p {
+	text-align: center;
+}
+
+h1 {
+	margin-bottom: 1rem;
+	font-size: 2em;
+}
+
+h3{
+	text-align: center;
+	font-size: 1.5em;
+}
+
+button {
+	color: black;
+	padding: 8px 5px;
+	cursor: pointer;
+	border: 2px solid var(--btn-border-color);
+	border-radius: .25em;
+	width: 10rem;
+	font-style: italic;
+}
+
+input {
+	color: black;
+}
+form.modify {
+	justify-content: space-between;
+	width: 450px;
+	padding: 20px;
+	gap: 20px;
+	border: 2px solid var(--card-border-color);
+	border-radius: 1rem;
+	background-color: var(--form-bg-color);
+	color: var(--form-text-color);
+}
+
+form button {
+	width: 5rem;
+	padding: 4px;
+	margin: 10px;
+}
+
+ul {
+	width: 80%;
+}
+
+li {
+	display: flex;
+	list-style-type: none;
+	justify-content: space-between;
+	margin: 10px 0;
+}
+
+li textarea {
+	resize: none;
+}
+
+img {
+	width: 130px;
+	height: auto;
+}
