@@ -148,6 +148,15 @@
 	z-index: 2;
 }
 
+#edit-form {
+  z-index: 9;
+  position: fixed;
+  bottom: 0;
+  /* top: 0; */
+  border: 2px solid red;
+  /* https://www.w3schools.com/howto/howto_js_popup_form.asp */
+}
+
 
 /*TAGS*/
 
